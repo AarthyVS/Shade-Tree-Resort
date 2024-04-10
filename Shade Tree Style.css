@@ -1,0 +1,730 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background: black;
+    width: 100%;
+}
+#nav
+{
+    position: fixed;
+    z-index: 100;
+    height: 110px;
+    width: 100%;
+    background: rgba(255,255,255,0.8) !important;
+    box-shadow: 0px 2px 5px black;
+    border-bottom-left-radius: 18%;
+    border-bottom-right-radius: 18%;
+}
+#nav .logo
+{
+    height: 100px;
+    width: 300px;
+    margin-left: 30px;
+}
+@media only screen and  (max-width: 630px)
+{
+    #nav .logo
+    {
+        height: 80px;
+        width: 250px
+    }
+}
+@media only screen and  (max-width: 550px)
+{
+    #nav .logo
+    {
+        height: 60px;
+        width: 200px
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+.container-fluid h1
+{
+    color: black;
+    text-shadow: 2px 2px 2px green;
+    font-family: 'Grape Nuts', cursive;
+}
+.nav-item
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: black !important;
+    margin-left: 30px;
+}
+.nav-link
+{
+    color: black !important;
+}
+.nav-link:hover
+{
+    color: white !important;
+    text-shadow: 2px 2px 2px black;
+}
+.dropdown-menu
+{
+    font-size: 20px !important;
+    background-color: rgba(255,255,255,0.4)!important;
+    border-width: 2px !important;
+}
+.dropdown-item
+{
+    font-weight: bold !important;
+}
+.dropdown-item:hover
+{
+    color: white !important;
+    background-color: green !important;
+}
+@media only screen and (max-width:992px)
+{
+    .nav-item,.dropdown-item
+    {
+        font-size: 16px !important;
+        padding: 0;
+    }
+    #nav
+    {
+        height: auto;
+    }
+}
+@media only screen and  (max-width: 1070px)
+{
+    .nav-item,.dropdown-item
+    {
+        margin-left: 10px;
+    }
+}
+@media only screen and  (max-width: 435px)
+{
+    .nav-item,.dropdown-item
+    {
+        font-size: 12px !important;
+        padding: 0;
+    }
+    #nav .logo
+    {
+        text-align: center;
+    }
+}
+#home
+{
+    height: 100vh;
+    width: 100%;
+    background: url('https://bkkfoodie.com/wp-content/uploads/2020/09/119443200_669916696958981_3746669938452836474_o.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+#home h1
+{
+    font-size: 60px;
+    padding: 20px;
+    font-weight: bolder;
+}
+#home h2
+{
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+#about
+{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(#dad7cd,#a3b18a);
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+.aboutus h1
+{
+    color: black;
+    text-shadow: 2px 2px 2px white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.aboone
+{
+    margin: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.abosm img
+{
+    height: 150px;
+    width: 250px
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Grape+Nuts&display=swap');
+.abosm h3
+{
+    color: #dda15e;
+    text-shadow: 2px 2px 2px #bc6c25;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Grape Nuts', cursive;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Grape+Nuts&display=swap');
+.abosm h1
+{
+    color: black;
+    text-shadow: 2px 2px 2px #283618;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Grape Nuts', cursive;
+    font-size: 40px;
+}
+.abosm p
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fefae0;
+    text-shadow: 2px 2px 2px black;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Grape+Nuts&display=swap');
+.aboone h1
+{
+    color: black;
+    font-size: 25px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Grape Nuts', cursive;
+}
+.aboone iframe
+{
+    width: auto;
+    height:350px;
+    margin-top: 50px;
+    border: 3px solid black;
+}
+@media only screen and  (max-width: 767px)
+{
+    .aboone
+    {
+        margin: 0;
+        padding: 0;
+    }
+}
+#resort
+{
+    height: auto;
+    width: 100%;
+    background: linear-gradient(#a3b18a,#588157);
+    padding-top: 120px;
+    padding-bottom: 50px;
+    position: relative;
+}
+.resorth h1
+{
+    color: black;
+    text-shadow: 2px 2px 2px white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.container .one
+{
+    margin-top: 50px;
+}
+.container .two,.container .three
+{
+    margin-top: 20px;
+}
+.chennai,.pondi,.kochi,.goa,.and,.laks,.wayanad,.ladakh,.agra
+{
+    background: rgba(255,255,255,0.5);
+    border: 2px solid black;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    margin-bottom: 30px;
+}
+@media only screen and  (max-width: 560px)
+{
+    .chennai,.pondi,.kochi,.goa,.and,.laks,.wayanad,.ladakh,.agra
+    {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+.chennai:hover,.pondi:hover,.kochi:hover,.goa:hover,.and:hover,.laks:hover,.wayanad:hover,.ladakh:hover,.agra:hover
+{
+    box-shadow: 0px 10px 10px black;
+    cursor: pointer;
+}
+#resort .carousel-inner
+{
+    border-radius: 20%;
+}
+.chennai .d-block,.pondi .d-block,.kochi .d-block,.goa .d-block,.and .d-block,.laks .d-block,.wayanad .d-block,.ladakh .d-block,.agra .d-block
+{
+    margin-top: 10px;
+    height: 300px !important;
+    width: 500px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Grape+Nuts&display=swap');
+.chennai h1,.pondi h1,.kochi h1,.goa h1,.and h1,.laks h1,.wayanad h1,.ladakh h1,.agra h1
+{
+    font-size: 20px;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Grape Nuts', cursive;
+}
+.chennai h3,.pondi h3,.kochi h3,.goa h3,.and h3,.laks h3,.wayanad h3,.ladakh h3,.agra h3
+{
+    font-size: 20px;
+    color: black;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Grape Nuts', cursive;
+}
+.book
+{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 3px;
+    background: #588157;
+}
+.book:hover
+{
+    color: white;
+    background: black;
+    border: 2px solid black;
+    box-shadow: 0px 10px 15px white;
+}
+#act
+{
+    height: auto;
+    width: 100%;
+    background: linear-gradient(#588157, #3a5a40);
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+#act h1
+{
+    color: black;
+    text-shadow: 2px 2px 2px white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.aone,.atwo,.athree,.afour,.afive,.asix,.aseven,.aeight
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 25px;
+    border-radius: 40px;
+    border: 2px solid wheat;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aone:hover,.atwo:hover,.athree:hover,.afour:hover,.afive:hover,.asix:hover,.aseven:hover,.aeight:hover
+{
+    box-shadow: 0px 20px 20px black;
+}
+.aone h1,.atwo h1,.athree h1,.afour h1,.afive h1,.asix h1,.aseven h1,.aeight h1
+{
+    font-size: 30px;
+    color: white !important;
+    text-shadow: 4px 4px 4px black !important;
+    height: 130px;
+}
+.aone
+{
+    background: url('https://media1.tenor.com/m/jTE-7Y4lpAgAAAAC/snorkel-scuba-diving.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.atwo
+{
+    background: url('https://media.giphy.com/media/RkiWBPLetlHTWwNiM7/giphy.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.athree
+{
+    background: url('https://c.tenor.com/Jf3w1PpEFz0AAAAC/spinning-people-are-awesome.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.afour
+{
+    background: url('https://media.tenor.com/images/c74f469454354071fd5ec38b0b01d264/tenor.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.afive
+{
+    background: url('https://i.giphy.com/9D32gj9d4hrls9zaRZ.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.asix
+{
+    background: url('http://www.andysowards.com/blog/assets/campfire-animation-cinemagraph.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.aseven
+{
+    background: url('https://media2.giphy.com/media/pA6Zh43rHFRlqdDCFl/giphy.gif?cid=ecf05e47t6qlkadsirgephmp94r7m8w97szes1ec3lgejk91&ep=v1_gifs_related&rid=giphy.gif&ct=g');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.aeight
+{
+    background: url('https://j.gifs.com/yE5JR9.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media only screen and  (max-width: 560px)
+{
+    .aone,.atwo,.athree,.afour,.afive,.asix,.seven,.aeight
+    {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+#arang
+{
+    height: auto;
+    width: 100%;
+    background: #3a5a40;
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+.arangement h1
+{
+    color: black;
+    text-shadow: 2px 2px 2px white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.araone,.aratwo,.arathree,.arafour,.arafive,.arasix
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    border-radius: 40px;
+    border: 2px solid white;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.araone h1,.aratwo h1,.arathree h1,.arafour h1,.arafive h1,.arasix h1
+{
+    font-size: 30px;
+    color: white !important;
+    text-shadow: 4px 4px 4px black !important;
+    height: 130px;
+}
+.araone
+{
+    background: url('https://prestigiousvenues.com/wp-content/uploads/2017/03/Birthday-Party-On-The-Beach-Round-Hill-Resort-Prestigious-Venues.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.araone:hover
+{
+    box-shadow: 0px 20px 20px black;
+}
+.aratwo
+{
+    background: url('https://s7d2.scene7.com/is/image/ritzcarlton/RCSANJU_00092_conversion?$XlargeViewport100pct$');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.aratwo:hover
+{
+    box-shadow: 0px 20px 20px black;
+}
+.arathree
+{
+    background: url('https://birthdaywisheszone.com/wp-content/uploads/2020/10/f19fbfc5a42151a2ab950c7fc8f5ce9b-1024x683.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.arathree:hover
+{
+    box-shadow: 0px 20px 20px black;
+}
+@media only screen and  (max-width: 560px)
+{
+    .araone,.aratwo,.arathree
+    {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+.araone a,.aratwo a,.arathree a
+{
+    color: white;
+    background: crimson;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px !important;
+}
+.araone a:hover,.aratwo a:hover,.arathree a:hover
+{
+    color: black;
+    background-color: white;
+    border: 2px solid white;
+}
+#bene
+{
+    height: auto;
+    width: 100%;
+    background: linear-gradient(#3a5a40, #344e41);
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+.benefit h1
+{
+    color: black;
+    text-shadow: 2px 2px 2px white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.bone
+{
+    background: url('https://limo209.com/wp-content/uploads/2018/07/spa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btwo
+{
+    background: url('https://s.yimg.com/uu/api/res/1.2/GKY8U.n9c794wIt3iLsKgQ--~B/aD0zNzQxO3c9NDk5NztzbT0xO2FwcGlkPXl0YWNoeW9u/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-images/2019-12/0b2ba560-20e9-11ea-8cf7-696e26e0bf16');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bthree
+{
+    background: url('https://www.lancashire-pcc.gov.uk/wp-content/uploads/2020/07/person_using_mobile_phone.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bfour
+{
+    background: url('https://atmosphereresorts.com/wp-content/uploads/2020/03/Main-pool-and-beach-at-Atmosphere-Resorts-Spa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bfive
+{
+    background: url('https://i.pinimg.com/originals/ff/5b/ee/ff5bee1bd42066bae5b106894ad51f8c.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bsix
+{
+    background: url('https://i.pinimg.com/originals/cc/76/74/cc76745c6911776b6bf26438f3b11412.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bone,.btwo,.bthree,.bfour,.bfive,.bsix
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+    border-radius: 40px;
+    border: 10px solid white;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bone:hover,.btwo:hover,.bthree:hover,.bfour:hover,.bfive:hover,.bsix:hover
+{
+    box-shadow: 0px 20px 20px black;
+}
+.bone h1,.btwo h1,.bthree h1,.bfour h1,.bfive h1,.bsix h1
+{
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    height: 130px;
+}
+@media only screen and  (max-width: 560px)
+{
+    .bone,.btwo,.bthree,.bfour,.bfive,.bsix
+    {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+.bone h3,.btwo h3,.bthree h3,.bfour h3,.bfive h3,.bsix h3
+{
+    color: transparent;
+}
+.benefit .hide
+{
+    height: 100%;
+    margin-top: 150px;
+    overflow: hidden;
+}
+.benefit .hide:hover
+{
+    margin-top: 0px;
+    transition: 0.2s;
+}
+.benefit .hide:hover h3
+{
+    color: white;
+    text-shadow: 2px 2px 2px darkred;
+    font-size: 25px;
+    margin-top: -110px;
+    letter-spacing: 1px;
+}
+@media only screen and  (max-width: 1209px)
+{
+    .bone,.btwo,.bthree,.bfour,.bfive,.bsix
+    {
+        border: 8px solid white;
+    }
+    .benefit .hide:hover h3
+    {
+        margin-top: -90px;
+        font-size: 19px;
+    }
+}
+@media only screen and  (max-width: 992px)
+{
+    .bone h1,.btwo h1,.bthree h1,.bfour h1,.bfive h1,.bsix h1
+    {
+        font-size: 26px;
+    }
+    .benefit .hide:hover h3
+    {
+        margin-top: -90px;
+        font-size: 15px;
+    }
+}
+#contact
+{
+    height: auto;
+    width: 100%;
+    background: url('https://i0.wp.com/stanzaliving.wpcomstaging.com/wp-content/uploads/2022/04/dba18-resorts-near-chennai.jpg?fit=1000%2C668&ssl=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+.cont h1
+{
+    color: black;
+    text-shadow: 2px 2px 2px white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+#contact .msg
+{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact .msg input,#contact .msg textarea
+{
+    width: 320px;
+    background: rgba(216, 236, 218, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#contact .msg input:hover,#contact .msg textarea:hover
+{
+    color: #a3b18a;
+    background: #344e41;
+}
+.msgto
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact .whats,#contact .gmail,#contact .facebook,#contact .insta,#contact .call
+{
+    border: 1px solid beige;
+    background: rgba(255,255,255,0.4);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.whats svg,.gmail svg,.facebook svg,.insta svg,.call svg
+{
+    margin-top: 5px;
+}
+.whats:hover
+{
+    transform: scale(1.2);
+    box-shadow: 0 30px 45px -15px darkgreen;
+    background: beige !important;
+}
+.gmail:hover
+{
+    transform: scale(1.2);
+    box-shadow: 0 30px 45px -15px darkred;
+    background: beige !important;
+}
+.facebook:hover
+{
+    transform: scale(1.2);
+    box-shadow: 0 30px 45px -15px darkblue;
+    background: beige !important;
+}
+.insta:hover
+{
+    transform: scale(1.2);
+    box-shadow: 0 30px 45px -15px red;
+    background: beige !important;
+}
+.call:hover
+{
+    transform: scale(1.2);
+    box-shadow: 0 30px 45px -15px yellow;
+    background: beige !important;
+}
+.footer
+{
+    margin-top: 20px;
+    text-align: center;
+}
+.footer hr
+{
+    color: white;
+}

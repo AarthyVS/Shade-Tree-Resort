@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shade Tree Andaman and Nicobar Booking</title>
+    <link rel="stylesheet" href="Place Booking Style.css">
+</head>
+<body>
+    <div class="main">
+        <a href="Shade Tree.html" class="mainm">HOME</a>
+    </div>
+    <div id="home">
+        <div id="booking">
+            <img src="Shade Tree.png">
+            <h1>SHADE TREE</h1>
+            <h3>ANDAMAN AND NICOBAR</h3>
+            <h3>Rs:29,999 Only</h3>
+            <form id="bookingForm">
+                <label for="checkin">Check-in Date:</label>
+                <input type="date" id="checkin" required>
+                <br><br>
+                <label for="checkout">Check-out Date:</label>
+                <input type="date" id="checkout" required>
+                <br><br>
+                <label for="numRooms">Number of Rooms:</label>
+                <input type="number" id="numRooms" min="1" value="1" required>
+                <br><br>
+                <button type="submit" id="gettotal">Calculate Total</button>
+                <br><br>
+                <div class="totalbox">
+                    <p id="total">TOTAL:</p>
+                </div>
+            </form>
+            <br>
+            <div class="booktwo">
+                <button type="submit" id="book" onclick="book()">Book</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() 
+        {
+            if (localStorage.getItem('checkin'))
+            {
+                document.getElementById('checkin').value = localStorage.getItem('checkin');
+            }
+            if (localStorage.getItem('checkout'))
+            {
+                document.getElementById('checkout').value = localStorage.getItem('checkout');
+            }
+            if (localStorage.getItem('numRooms'))
+            {
+                document.getElementById('numRooms').value = localStorage.getItem('numRooms');
+            }
+
+            document.getElementById('bookingForm').addEventListener('submit', function(event) 
+            {
+                event.preventDefault();
+                calculateTotal();
+                localStorage.setItem('Check In', document.getElementById('checkin').value);
+                localStorage.setItem('Check Out', document.getElementById('checkout').value);
+                localStorage.setItem('Number of Rooms', document.getElementById('numRooms').value);
+            });
+        });
+
+        function calculateTotal() 
+        {
+            var checkinDate = new Date(document.getElementById('checkin').value);
+            var checkoutDate = new Date(document.getElementById('checkout').value);
+            var numRooms = parseInt(document.getElementById('numRooms').value);
+            var oneDay = 24 * 60 * 60 * 1000;
+            var diffDays = Math.round(Math.abs((checkoutDate - checkinDate) / oneDay));
+            var totalPrice = diffDays * numRooms * 29999;
+            document.getElementById('total').innerHTML = 'TOTAL Rs-' + totalPrice +'/-';
+        }
+        function book()
+        {
+            alert("Rooms are successfully booked");
+        }
+    </script>
+</body>
+</html>

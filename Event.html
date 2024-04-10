@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shade Tree Arrangements Booking</title>
+    <link rel="stylesheet" href="Event Styles.css">
+</head>
+<body>
+    <div class="main">
+        <a href="Shade Tree.html" class="mainm">HOME</a>
+    </div>
+    <div id="home">
+        <div id="booking">
+            <img src="Shade Tree.png">
+            <h1>SHADE TREE</h1>
+            <h3>PARTY</h3>
+            <form id="bookingForm">
+                <label>Select The Event:</label>
+                <select>
+                    <option id="eventfor" value="1">Party</option>
+                    <option value="2">Marriage</option>
+                    <option value="3">Birthday</option>
+                </select>
+                <br><br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+                <br><br>
+                <label for="person">Number of Persons:</label>
+                <input type="number" id="person" required>
+                <br><br>
+                <button onclick="schedule()" type="submit" id="schedule">Submit Schedule</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() 
+        {
+            if (localStorage.getItem('date'))
+            {
+                document.getElementById('date').value = localStorage.getItem('date');
+            }
+            if (localStorage.getItem('person'))
+            {
+                document.getElementById('person').value = localStorage.getItem('person');
+            }
+
+            document.getElementById('bookingForm').addEventListener('submit', function(event) 
+            {
+                event.preventDefault();
+                localStorage.setItem('Date', document.getElementById('date').value);
+                localStorage.setItem('Number of Persons', document.getElementById('person').value);
+            });
+        });
+        function schedule()
+        {
+            alert("Your Event is successfully booked");
+        }
+    </script>
+</body>
+</html>
